@@ -1,0 +1,1 @@
+# CRM Opportunity Logger (placeholder)
