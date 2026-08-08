@@ -26,12 +26,16 @@ Sit with that. Every single use is a chance to improve the tool for the whole fi
 
 ## What I am taking into my own work
 
-I build agentic systems for narrow, real workflows, not generic assistants. PAT is the strongest argument I have seen for that approach. Specialise the agent, benchmark it hard, and only then compound. The takeaway I keep coming back to is theirs, not mine. Avoid generic powerful agents. They make great demos and terrible daily tools.
+I build agentic systems for narrow, real workflows, not generic assistants. PAT is the strongest argument I have seen for that approach. Specialise the agent, benchmark it hard, and only then compound.
+
+The search agent detail did not stay on paper. One of my own search and matching engines used to score by keyword overlap. I rebuilt it on inference-based reasoning, looking behind the labels at what the words actually mean, then arguing a case for every match based on judgement. The score stayed, what feeds it changed. From keyword matching to semantic, inference-based matching, and the results moved from noise to signal almost overnight.
+
+The takeaway I keep coming back to is theirs, not mine. Avoid generic powerful agents. They make great demos and terrible daily tools.
 
 ## Sources
 
-Official recording, LangChain Interrupt 2026: https://www.youtube.com/watch?v=lXZb21CfeIY
+Official recording, LangChain Interrupt 2026. https://www.youtube.com/watch?v=lXZb21CfeIY
 
-Bridgewater AIA Labs write-up: https://www.bridgewater.com/aia-labs/how-bridgewaters-aia-labs-built-pat-the-ai-pocket-analyst-tool
+Bridgewater AIA Labs write-up. https://www.bridgewater.com/aia-labs/how-bridgewaters-aia-labs-built-pat-the-ai-pocket-analyst-tool
 
-Surfaced via Linas Beliunas on LinkedIn
+Surfaced via Linas Beliunas on LinkedIn.
