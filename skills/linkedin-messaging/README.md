@@ -10,7 +10,7 @@ Owns the copy, register, structure and send protocol for messages written in the
 
 The send protocol is absolute. Compose, screenshot, show the rendered message, wait for an explicit yes, even when the instruction was to send. Costs are surfaced before sending, a paid message credit is the principal's to spend, not the agent's. Greetings are computed, never guessed, the time-of-day salutation is checked against the actual local clock because a morning greeting landing at night is the cheapest possible way to look automated. The message shape is fixed, a relationship-calibrated salutation, short paragraphs with one idea each, achievement over biography in the body, the weakest claim placed last where it interrupts nothing, and a close that leaves a door open rather than making a demand.
 
-Favour asks are a different shape, the reason before the request, the smallest possible ask, an explicit exit that keeps the reader unc cornered, and no two identical asks ever sent, varied in register and length so parallel recipients never compare notes on a template.
+Favour asks are a different shape, the reason before the request, the smallest possible ask, an explicit exit so the reader never feels cornered, and no two identical asks ever sent, varied in register and length so parallel recipients never compare notes on a template.
 
 ## Guardrails
 
