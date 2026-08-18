@@ -1,6 +1,6 @@
 # Email Inbox Intelligence
 
-**Status** Live  ·  **Runtime** Cowork  ·  **Trigger** Daily scheduled run
+**Status** Paused  ·  **Runtime** Cowork  ·  **Trigger** Daily scheduled run
 
 **Relationship.** Shares infrastructure with [crm-lead-screening](../crm-lead-screening/README.md), feeding the email channel into the same record pool and ruleset.
 
@@ -74,4 +74,4 @@ Task cards created without context. A task with no sources just moves the diggin
 
 ## Impact
 
-The baseline was four hundred to six hundred emails standing in the inbox, every session opening with triage and priority work displaced by digging, with delays compounding because focus went to the pile instead of the tasks. The standing inbox went from hundreds to single digits and stays there run over run, meetings arrive with a prep note, an event and a ready draft, and tasks arrive with sources attached. As an estimate, one to two hours of daily triage and context-gathering are returned, assuming the baseline pile would otherwise be worked at all, historically it was deferred, which is the compounding failure the agent removes. Response latency to counterparties, calendar accuracy over time and the downstream completion rate of tasks the agent creates are not measured.
+The baseline was four hundred to six hundred emails standing in the inbox, every session opening with triage and priority work displaced by digging, with delays compounding because focus went to the pile instead of the tasks. The standing inbox went from hundreds to single digits and stayed there run over run, meetings arrived with a prep note, an event and a ready draft, and tasks arrived with sources attached. The scheduled run is currently paused while the underlying pipeline is rebuilt as an adapter on the shared discovery architecture, stated here rather than hidden. As an estimate, one to two hours of daily triage and context-gathering were returned while live, assuming the baseline pile would otherwise be worked at all, historically it was deferred, which is the compounding failure the agent removes. Response latency to counterparties, calendar accuracy over time and the downstream completion rate of tasks the agent creates are not measured.
