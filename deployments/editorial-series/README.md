@@ -36,15 +36,15 @@ channel gate ──┬──> Wix    upload ──> post ──> log
 
 ## Harness
 
-The pipeline is a single series line with no parallel branches. The platform cannot resolve sibling branches by node name across a parallel convergence, so the three write stages are chained one after another and a single convergence node reads all three by name from the one walked branch. That constraint shaped the whole topology, recorded in decisions 0001.
+**The loop** is a single series line with no parallel branches. The platform cannot resolve sibling branches by node name across a parallel convergence, so the three write stages are chained one after another and a single convergence node reads all three by name from the one walked branch. That constraint shaped the whole topology, recorded in decisions 0001.
 
-Context assembly. The research stage produces a sourced brief from the topic seed. Each write stage receives the brief plus the channel it must serve, hardcoded per stage, and applies the same locked essay voice with channel-specific caps and furniture.
+**Context assembly.** The research stage produces a sourced brief from the topic seed. Each write stage receives the brief plus the channel it must serve, hardcoded per stage, and applies the same locked essay voice with channel-specific caps and furniture.
 
-Tool bindings are raw HTTP calls to the provider REST APIs, inheriting the standing rule from the [editorial-publishing](../editorial-publishing/README.md) deployment. Two-step media uploads carry a rebind node between the calls because an HTTP node emits only the API response and drops both the incoming binary and any custom fields.
+**Tool bindings** are raw HTTP calls to the provider REST APIs, inheriting the standing rule from the [editorial-publishing](../editorial-publishing/README.md) deployment. Two-step media uploads carry a rebind node between the calls because an HTTP node emits only the API response and drops both the incoming binary and any custom fields.
 
-Stop conditions. A semantic dedup gate stops the run if the topic scores too close to recent output. Channel gates route each tagged item to exactly one publishing branch.
+**Stop conditions.** A semantic dedup gate stops the run if the topic scores too close to recent output. Channel gates route each tagged item to exactly one publishing branch.
 
-Human gates. None inside the loop. The human curates the topic queue upstream and verifies the live surfaces downstream. Run status is never trusted, a run can report success while every item routed to a dead gate, so verification is against the published posts.
+**Human gates.** None inside the loop. The human curates the topic queue upstream and verifies the live surfaces downstream. Run status is never trusted, a run can report success while every item routed to a dead gate, so verification is against the published posts.
 
 ## Stack
 
