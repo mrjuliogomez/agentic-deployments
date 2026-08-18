@@ -35,7 +35,7 @@ Everything here runs, or ran, on real work, publishing, CRM operations, email, d
 
 ## Knowledge base
 
-Analyses of other builders' production agent architectures, one folder per topic, each carrying the source material and my own analysis. Current topics, an AI pocket analyst tool built inside a major investment firm, with transcript, slides and analysis, and a collection of sources on building agents that run for hours without losing the plot.
+A working library on applied AI, kept for builders. Anything that adds to how we build earns a folder, production architectures, conference talks, research papers, pilots, businesses built around AI, new paradigms worth stealing from. One folder per topic, each carrying the source material and my own analysis, because the point is to learn from each other and the analysis is where the learning shows. Current topics, an AI pocket analyst tool built inside a major investment firm, with transcript, slides and analysis, and a collection of sources on building agents that run for hours without losing the plot.
 
 ## Licence
 
