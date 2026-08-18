@@ -41,15 +41,15 @@ Run report
 
 ## Harness
 
-The loop is one daily pass over the inbox window, each message classified once and routed to exactly one lane.
+**The loop** is one daily pass over the inbox window, each message classified once and routed to exactly one lane.
 
-Context assembly is per lane. The meeting lane pulls calendar state and researched counterparty background before writing a word. The task lane gathers the source documents the task will need so the assignee starts with everything attached. The project lane reads the current state of the peripheral it is about to update.
+**Context assembly** is per lane. The meeting lane pulls calendar state and researched counterparty background before writing a word. The task lane gathers the source documents the task will need so the assignee starts with everything attached. The project lane reads the current state of the peripheral it is about to update.
 
-Tool bindings are Gmail, the calendar, the CRM, spreadsheets and web research, all through the agent's standard tool surface.
+**Tool bindings** are Gmail, the calendar, the CRM, spreadsheets and web research, all through the agent's standard tool surface.
 
-Stop conditions. The inbox window bounds each run, and anything the classifier cannot place with confidence stays in the inbox for the human rather than being filed on a guess.
+**Stop conditions.** The inbox window bounds each run, and anything the classifier cannot place with confidence stays in the inbox for the human rather than being filed on a guess.
 
-Human gates. Every outbound reply is a draft, the human sends. Filing and peripheral updates run autonomously, they are reversible. The prep note and the attached sources are decision support, the decisions stay human.
+**Human gates.** Every outbound reply is a draft, the human sends. Filing and peripheral updates run autonomously, they are reversible. The prep note and the attached sources are decision support, the decisions stay human.
 
 ## Stack
 
