@@ -40,7 +40,7 @@ The pipeline is a single series line with no parallel branches. The platform can
 
 Context assembly. The research stage produces a sourced brief from the topic seed. Each write stage receives the brief plus the channel it must serve, hardcoded per stage, and applies the same locked essay voice with channel-specific caps and furniture.
 
-Tool bindings are raw HTTP calls to the provider REST APIs, inheriting the standing rule from the editorial-publishing deployment. Two-step media uploads carry a rebind node between the calls because an HTTP node emits only the API response and drops both the incoming binary and any custom fields.
+Tool bindings are raw HTTP calls to the provider REST APIs, inheriting the standing rule from the [editorial-publishing](../editorial-publishing/README.md) deployment. Two-step media uploads carry a rebind node between the calls because an HTTP node emits only the API response and drops both the incoming binary and any custom fields.
 
 Stop conditions. A semantic dedup gate stops the run if the topic scores too close to recent output. Channel gates route each tagged item to exactly one publishing branch.
 
@@ -83,18 +83,4 @@ Hero images cropped by the destination container. The blog cover box crops any a
 
 ## Impact
 
-### Baseline
-
-One essay across three channels by hand took a working morning, research, drafting, three channel adaptations, image work and posting.
-
-### Measured
-
-All three channels publish from a single trigger run, visually confirmed on the live surfaces. The media path is hardened, both two-step uploads survive the binary drop and the hero renders uncropped.
-
-### Estimated
-
-ESTIMATE. Three to four hours returned per essay week. Assumes the manual alternative would have held the weekly cadence, which competing priorities make unlikely.
-
-### Not measured
-
-Engagement per channel, follower growth attributable to the series, and the relative performance of essay topics.
+One essay across three channels by hand took a working morning, research, drafting, three channel adaptations, image work and posting. All three channels now publish from a single trigger run, visually confirmed on the live surfaces, and the media path is hardened, both two-step uploads survive the binary drop and the hero renders uncropped. As an estimate, three to four hours return per essay week, assuming the manual alternative would have held the weekly cadence, which competing priorities make unlikely. Engagement per channel, follower growth attributable to the series and the relative performance of essay topics are not measured.
