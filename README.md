@@ -15,7 +15,7 @@ Everything here runs, or ran, on real work, publishing, CRM operations, email, d
 | [crm-record-sanitiser](deployments/crm-record-sanitiser/README.md) | Nightly card hygiene, registry research and dedup on the prospect-curation stage | Live |
 | [crm-lead-screening](deployments/crm-lead-screening/README.md) | Multi-source opportunity discovery judged against a compiled ruleset and capability model | Live |
 | [email-inbox-intelligence](deployments/email-inbox-intelligence/README.md) | Content-based inbox triage into meetings, tasks, project updates and filing | Live |
-| [crm-kpi-dashboard](deployments/crm-kpi-dashboard/README.md) | Weekly top-ten owed tasks read across email and the CRM | Paused |
+| [crm-kpi-dashboard](deployments/crm-kpi-dashboard/README.md) | Weekly top-ten owed tasks read across email and the CRM | Live |
 | [context-mcp-server](deployments/context-mcp-server/README.md) | MCP server giving every agent session shared git-backed memory with guarded writes | Live |
 | [partner-onboarding-form-filler](deployments/partner-onboarding-form-filler/README.md) | One email address in, complete client onboarding packet out | Live |
 
