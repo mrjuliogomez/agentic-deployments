@@ -36,7 +36,12 @@ Everything here runs, or ran, on real work, publishing, CRM operations, email, d
 
 ## Knowledge base
 
-A working library on applied AI, indexed in [knowledge-base/](knowledge-base/README.md). Anything that adds to how we build earns a folder, production architectures, conference talks, research papers, pilots, businesses built around AI, new paradigms worth stealing from, each with its source material and an analysis. Current topics, an AI pocket analyst tool built inside a major investment firm, with transcript, slides and analysis, and a collection of sources on building agents that run for hours without losing the plot.
+A working library on applied AI. Anything that adds to how we build earns a folder, production architectures, conference talks, research papers, pilots, businesses built around AI, new paradigms worth stealing from, each with its source material and an analysis.
+
+| Topic | What it holds |
+|---|---|
+| [building-pat-the-ai-pocket-analyst-tool](knowledge-base/building-pat-the-ai-pocket-analyst-tool/) | An AI pocket analyst built inside a major investment firm, transcript, slides and analysis |
+| [build-agents-that-run-for-hours-without-losing-the-plot](knowledge-base/build-agents-that-run-for-hours-without-losing-the-plot/) | Source collection on long-running agent design, analysis in progress |
 
 ## Licence
 
