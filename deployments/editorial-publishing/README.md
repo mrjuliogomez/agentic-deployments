@@ -84,18 +84,4 @@ False success runs. Continue-on-error wiring lets a failing node report green wh
 
 ## Impact
 
-### Baseline
-
-All channel publishing was manual. Each researched post required reading the source, researching context, drafting, adapting per channel and posting by hand.
-
-### Measured
-
-The audit log passed two thousand rows of logged publishing activity across the four channels. Voice variety confirmed on live surfaces after the voice menu rework. Duplicate publishing measured at zero since the dedup store fix, verified against distinct per-row vectors in the log.
-
-### Estimated
-
-ESTIMATE. At thirty to sixty minutes per researched multi-channel post by hand, the pipeline returns several hours per week. Assumes the manual alternative would have sustained the same cadence, which it would not have.
-
-### Not measured
-
-Engagement and reach per voice and per channel. Follower growth attributable to cadence. The performance review of the voice mix is pending.
+All channel publishing was manual before this, each researched post costing source reading, context research, drafting, per-channel adaptation and posting by hand. Since going live the audit log has passed two thousand rows of publishing activity across the four channels, voice variety is confirmed on the live surfaces, and duplicate publishing has measured zero since the dedup store fix, verified against distinct per-row vectors in the log. As an estimate, at thirty to sixty minutes per researched multi-channel post by hand the pipeline returns several hours per week, assuming the manual alternative would have sustained the same cadence, which it would not have. Engagement and reach per voice and per channel are not yet measured, the performance review of the voice mix is pending.
