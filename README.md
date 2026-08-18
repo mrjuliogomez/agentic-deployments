@@ -32,10 +32,11 @@ Everything here runs, or ran, on real work, publishing, CRM operations, email, d
 | [document-identity](skills/document-identity/README.md) | The locked brand canon every client-facing document build obeys |
 | [example-curation](skills/example-curation/README.md) | Filing real good and bad communication cases so practice compounds |
 | [linkedin-messaging](skills/linkedin-messaging/README.md) | Copy, register and send protocol for messages written as the principal |
+| [public-portfolio-publishing](skills/public-portfolio-publishing/README.md) | The publishing law this portfolio itself obeys, from private build to public page |
 
 ## Knowledge base
 
-A working library on applied AI. Anything that adds to how we build earns a folder, production architectures, conference talks, research papers, pilots, businesses built around AI, new paradigms worth stealing from, each with its source material and an analysis. Current topics, an AI pocket analyst tool built inside a major investment firm, with transcript, slides and analysis, and a collection of sources on building agents that run for hours without losing the plot.
+A working library on applied AI, indexed in [knowledge-base/](knowledge-base/README.md). Anything that adds to how we build earns a folder, production architectures, conference talks, research papers, pilots, businesses built around AI, new paradigms worth stealing from, each with its source material and an analysis. Current topics, an AI pocket analyst tool built inside a major investment firm, with transcript, slides and analysis, and a collection of sources on building agents that run for hours without losing the plot.
 
 ## Licence
 
