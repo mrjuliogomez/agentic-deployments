@@ -2,7 +2,7 @@
 
 **Status** Live  ·  **Runtime** Cowork and n8n Cloud  ·  **Trigger** Daily and on-demand runs
 
-**Relationship.** Shares its record pool and compiled ruleset with email-inbox-intelligence, which feeds the same pipeline from the email channel.
+**Relationship.** Shares its record pool and compiled ruleset with [email-inbox-intelligence](../email-inbox-intelligence/README.md), which feeds the same pipeline from the email channel.
 
 ## What it does
 
@@ -84,18 +84,4 @@ Tooling defects misread as market facts. A broken search widget looks identical 
 
 ## Impact
 
-### Baseline
-
-Screening was manual browsing across a handful of portals, unrecorded, inconsistent between sittings and blind to most of the structured-feed universe.
-
-### Measured
-
-Thirteen production runs. A shared pool of roughly one hundred and fifty records with full audit trails, nineteen scored cards delivered for human review, and every negative disposition carrying a reason code and an evidence trail. Kill tallies dimensioned by reason and source on every run report.
-
-### Estimated
-
-ESTIMATE. Manual coverage of the same source universe would cost upwards of ten hours a week. Assumes the manual alternative would attempt full coverage, which it never did.
-
-### Not measured
-
-Outcome conversion of carded opportunities. The funnel has an entrance and no exit yet, an outcomes table is the next build item, stated here rather than hidden.
+Screening was manual browsing across a handful of portals before this, unrecorded, inconsistent between sittings and blind to most of the structured-feed universe. Thirteen production runs have built a shared pool of roughly one hundred and fifty records with full audit trails and delivered nineteen scored cards for human review, every negative disposition carrying a reason code and an evidence trail, and every run report dimensioning its kill tallies by reason and source. As an estimate, manual coverage of the same source universe would cost upwards of ten hours a week, assuming the manual alternative would attempt full coverage, which it never did. Outcome conversion of carded opportunities is not measured yet, the funnel has an entrance and no exit, and an outcomes table is the next build item, stated here rather than hidden.
