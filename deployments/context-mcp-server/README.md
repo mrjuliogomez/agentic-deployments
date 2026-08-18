@@ -56,7 +56,7 @@ Catastrophic shrink writes. A session that read a stale or partial copy can over
 
 Deploy lag serving stale reads. The server's local checkout lags a fresh commit, so content and hash could disagree. Handled by reading from the GitHub API as the source of truth so content and hash arrive as a matched pair, local disk is only a fallback.
 
-Provider errors masked by wrappers. Handled by passing the raw GitHub error status and body through to the caller, the same doctrine the pipeline deployments arrived at independently.
+Provider errors masked by wrappers. Handled by passing the raw GitHub error status and body through to the caller, the same doctrine the [editorial-publishing](../editorial-publishing/README.md) pipeline arrived at independently.
 
 ## Decisions
 
@@ -67,18 +67,4 @@ Provider errors masked by wrappers. Handled by passing the raw GitHub error stat
 
 ## Impact
 
-### Baseline
-
-Context lived per conversation. Every session started by re-explaining the business, and anything learned in one session was invisible to the next.
-
-### Measured
-
-Every agent in the fleet reads and writes the same portfolio through this server. All five guard behaviours verified live, baseline-hash read, stale refusal, shrink refusal, correct-baseline success and force override. The clobber class of data loss has not recurred since the guard shipped.
-
-### Estimated
-
-ESTIMATE. Ten to twenty minutes of context re-establishment saved per session across every session run since launch. Assumes the alternative was manual re-briefing, which is what actually happened before it existed.
-
-### Not measured
-
-Token cost of portfolio reads against the cost of lost context, and read latency added versus a local store.
+Context lived per conversation before this, every session started by re-explaining the business and anything learned in one session was invisible to the next. Every agent in the fleet now reads and writes the same portfolio through this server, all five guard behaviours are verified live, baseline-hash read, stale refusal, shrink refusal, correct-baseline success and force override, and the clobber class of data loss has not recurred since the guard shipped. As an estimate, ten to twenty minutes of context re-establishment are saved per session across every session run since launch, assuming the alternative was manual re-briefing, which is what actually happened before it existed. The token cost of portfolio reads against the cost of lost context, and the read latency added versus a local store, are not measured.
