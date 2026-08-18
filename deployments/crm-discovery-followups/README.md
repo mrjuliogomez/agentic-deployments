@@ -8,7 +8,7 @@ Works the discovery stage of the CRM board every morning. For each lead card tha
 
 ## Why it exists
 
-Follow-up discipline is where pipelines die. Dozens of discovery leads each need the right touch at the right interval in the right language, and doing that by hand means either a daily hour of thread archaeology or leads silently going cold. The bot does the archaeology and the drafting, the human keeps the judgement and the send button.
+Follow-up discipline is where pipelines die. Dozens of discovery leads each need the right touch at the right interval in the right language, and doing that by hand means either a daily hour of thread archaeology or leads silently going cold. The agent does the archaeology and the drafting, the human keeps the judgement and the send button.
 
 ## Architecture
 
@@ -66,6 +66,8 @@ Cadence state corruption. The touch count lives in the card's own ledger comment
 
 Language misfires. A greeting in the wrong language reads as automation. Handled by deriving language from the lead's mail domain and thread language, with the human catching outliers at draft review.
 
+Dirty input cards. A malformed card or an unverified address upstream would have the agent drafting to the wrong person. Handled upstream by the [record sanitiser](../crm-record-sanitiser/README.md), only verified, canonically structured cards reach the discovery stage.
+
 ## Decisions
 
 | # | Title |
@@ -76,18 +78,4 @@ Language misfires. A greeting in the wrong language reads as automation. Handled
 
 ## Impact
 
-### Baseline
-
-Follow-ups were manual. Each due lead cost minutes of thread re-reading before a line could be written, and leads slipped through in silence when the day filled up.
-
-### Measured
-
-The first production run processed the due batch and shipped eight ready-to-send drafts with ledger comments and forward due dates, and moved two replied leads to the engaged stage without any human research. The daily cap holds the run to ten cards.
-
-### Estimated
-
-ESTIMATE. At ten to fifteen minutes of manual archaeology and drafting per touch, a full daily batch returns up to two hours. Assumes the touches would otherwise have been made at all, which the baseline says they often were not.
-
-### Not measured
-
-Reply-rate uplift against manual follow-ups, revenue attribution, and the effect of bridge greetings on post-holiday response.
+Follow-ups were manual before this, each due lead costing minutes of thread re-reading before a line could be written, and leads slipped through in silence when the day filled up. The first production run processed the due batch and shipped eight ready-to-send drafts with ledger comments and forward due dates, and moved two replied leads to the engaged stage without any human research, with the daily cap holding the run to ten cards. As an estimate, at ten to fifteen minutes of manual archaeology and drafting per touch a full daily batch returns up to two hours, assuming the touches would otherwise have been made at all, which the baseline says they often were not. Reply-rate uplift, revenue attribution and the effect of bridge greetings on post-holiday response are not measured.
