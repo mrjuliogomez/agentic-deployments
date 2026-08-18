@@ -38,15 +38,15 @@ Prep Media ── image valid? ──no──> log MEDIA_FAIL, drop
 
 ## Harness
 
-The loop is a linear per-item pipeline. A splitting node feeds items through one at a time so every downstream reference resolves to the current item.
+**The loop** is a linear per-item pipeline. A splitting node feeds items through one at a time so every downstream reference resolves to the current item.
 
-Context assembly happens in two stages. A research stage builds a sourced brief for the article, then a write stage receives that brief plus a voice library. The model selects the voice from a menu gated by channel, so each channel only ever receives voices approved for it. Personas bias the choice but cannot force it, which keeps output varied without hard routing code.
+**Context assembly** happens in two stages. A research stage builds a sourced brief for the article, then a write stage receives that brief plus a voice library. The model selects the voice from a menu gated by channel, so each channel only ever receives voices approved for it. Personas bias the choice but cannot force it, which keeps output varied without hard routing code.
 
-Tool bindings are raw HTTP calls to each provider REST API rather than the platform's native integration nodes. Recorded in decisions 0001, after three production failures on three different channels.
+**Tool bindings** are raw HTTP calls to each provider REST API rather than the platform's native integration nodes. Recorded in decisions 0001, after three production failures on three different channels.
 
-Stop conditions. A semantic dedup gate drops any item whose embedding scores at or above the similarity threshold against the trailing window of published output. An image validity gate drops items whose media fails, logging them under a failure status rather than publishing without imagery. Every publish node carries retry with backoff and continue-on-error wiring so one channel failing cannot cascade into the others.
+**Stop conditions.** A semantic dedup gate drops any item whose embedding scores at or above the similarity threshold against the trailing window of published output. An image validity gate drops items whose media fails, logging them under a failure status rather than publishing without imagery. Every publish node carries retry with backoff and continue-on-error wiring so one channel failing cannot cascade into the others.
 
-Human gates. None inside the loop. The pipeline publishes autonomously and the human reviews the audit log and the live surfaces. A run reporting success is never trusted on its own, because continue-on-error can turn a total failure green. The live surface is the only proof of a post.
+**Human gates.** None inside the loop. The pipeline publishes autonomously and the human reviews the audit log and the live surfaces. A run reporting success is never trusted on its own, because continue-on-error can turn a total failure green. The live surface is the only proof of a post.
 
 ## Stack
 
