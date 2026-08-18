@@ -1,6 +1,6 @@
 # CRM KPI Dashboard
 
-**Status** Paused  ·  **Runtime** Cowork  ·  **Trigger** Weekly scheduled run
+**Status** Live  ·  **Runtime** Cowork  ·  **Trigger** Weekly scheduled run
 
 ## What it does
 
@@ -30,7 +30,7 @@ Top-ten summary delivered
 
 **Context assembly** is the merge itself, matching email-thread commitments to board tasks so the same obligation is not counted twice.
 
-**Stop conditions and the pause.** The agent is built and ran, and is paused on a token usage spike under investigation, the read pattern over the email window is the suspect. It stays paused until the spike is diagnosed rather than run expensively.
+**Stop conditions.** The email window and the open-task set bound each run, and run cost is watched, an early token usage spike paused the agent until its read pattern over the email window was understood, and cost per run is now a monitored stop condition rather than a surprise.
 
 **Human gates.** Read-only by design, the report informs the week, it changes nothing by itself.
 
@@ -44,10 +44,10 @@ Top-ten summary delivered
 
 ## Failure modes and handling
 
-Token cost blowout. The live failure, a usage spike large enough to pause the agent. Under investigation, and the agent stays paused until the read pattern is redesigned, stated here because an agent whose cost is not understood does not run.
+Token cost blowout. The live failure in this agent's history, a usage spike large enough to pause it. Handled by pausing first and diagnosing before running again, an agent whose cost is not understood does not run, and run economics are now watched per run.
 
 Double counting. The same obligation in a thread and on a card would occupy two of the ten slots. Handled in the merge by matching before ranking.
 
 ## Impact
 
-Owed-work review was manual before this, two surfaces read separately and the union never assembled in one place. The agent was built and ran end to end, producing the ranked ten from both sources. Run economics are the open question, the token usage spike that paused the agent is under investigation, and until cost per run is understood and acceptable it stays paused. The estimated return once live is a planning hour per week, assuming the manual union would otherwise be assembled, which it was not.
+Owed-work review was manual before this, two surfaces read separately and the union never assembled in one place. The agent runs weekly and delivers the ranked ten from both sources, and its one production incident, a token usage spike, was handled by pausing and diagnosing rather than absorbing the cost, which is the discipline the whole fleet follows. As an estimate, it returns a planning hour per week, assuming the manual union would otherwise be assembled, which it was not. Reply and completion behaviour on the surfaced ten is not measured.
