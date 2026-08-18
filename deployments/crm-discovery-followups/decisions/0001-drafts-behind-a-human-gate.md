@@ -4,7 +4,7 @@
 
 ## Context
 
-The bot writes outbound email to real prospects under a real name. A wrong register, a stale fact or a mistimed touch costs relationship capital that a small market does not give back. The workflow is technically capable of sending autonomously.
+The agent writes outbound email to real prospects under a real name. A wrong register, a stale fact or a mistimed touch costs relationship capital that a small market does not give back. The workflow is technically capable of sending autonomously.
 
 ## Options
 
