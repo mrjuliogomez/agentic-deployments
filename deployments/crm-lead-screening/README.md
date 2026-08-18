@@ -38,15 +38,15 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 
 ## Harness
 
-The loop is feeders in, one judge out. Discovery agents only retrieve and kill at the headline, they never evaluate substance. Everything that survives is written to the pool at ingest status, and a single judging pass runs once per record before the human ever sees it. Recorded in decisions 0003.
+**The loop** is feeders in, one judge out. Discovery agents only retrieve and kill at the headline, they never evaluate substance. Everything that survives is written to the pool at ingest status, and a single judging pass runs once per record before the human ever sees it. Recorded in decisions 0003.
 
-Context assembly. The judge reads the compiled ruleset, a generated artifact with a version and a hash, never the scattered source rules, and matches substance against a capability model built from an interview-corrected inventory of what the principal can actually defend. Where live law is missing from the artifact the agent stops and reports rather than executing on conversation memory. Recorded in decisions 0001 and 0002.
+**Context assembly.** The judge reads the compiled ruleset, a generated artifact with a version and a hash, never the scattered source rules, and matches substance against a capability model built from an interview-corrected inventory of what the principal can actually defend. Where live law is missing from the artifact the agent stops and reports rather than executing on conversation memory. Recorded in decisions 0001 and 0002.
 
-Tool bindings. Portal and feed retrieval over raw HTTP, the record pool in Airtable, cards in Asana, judging by Claude agents running as scheduled tasks.
+**Tool bindings.** Portal and feed retrieval over raw HTTP, the record pool in Airtable, cards in Asana, judging by Claude agents running as scheduled tasks.
 
-Stop conditions. Headline kills write no record, only a tally. A resolution that fails twice on independent surfaces parks the record with the blocker named. A daily card cap and an auto-expiry window keep the queue honest. Negative results follow a surface-authority doctrine, a claim about a listing is only trusted from the surface that owns it.
+**Stop conditions.** Headline kills write no record, only a tally. A resolution that fails twice on independent surfaces parks the record with the blocker named. A daily card cap and an auto-expiry window keep the queue honest. Negative results follow a surface-authority doctrine, a claim about a listing is only trusted from the surface that owns it.
 
-Human gates. The pipeline cards, it never applies, contacts or submits. Every card carries exactly one action comment for the human. Rulings made mid-run that are not yet compiled into the artifact are flagged as unshipped and block the next deployment.
+**Human gates.** The pipeline cards, it never applies, contacts or submits. Every card carries exactly one action comment for the human. Rulings made mid-run that are not yet compiled into the artifact are flagged as unshipped and block the next deployment.
 
 ## Stack
 
