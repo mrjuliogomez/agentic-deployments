@@ -1,6 +1,6 @@
 # agentic-deployments
 
-Agentic AI systems in production. Deployment write-ups, the skills that operate them, and a knowledge base of architecture analyses.
+Agentic AI systems in production. Deployment write-ups, the skills that operate them, and a working knowledge base on applied AI.
 
 Everything here runs, or ran, on real work, publishing, CRM operations, email, document production. Each deployment folder carries the full write-up, what the agent does, why it exists, its architecture, its harness, its stack, its failure modes and its measured impact, plus decision records where a real fork existed. Agents marked Live run in production, with scheduled runs throttled or paused during low-activity periods so the token budget goes to builds in progress.
 
