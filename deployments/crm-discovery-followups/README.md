@@ -33,15 +33,15 @@ Route by state
 
 ## Harness
 
-The loop is a daily batch capped at ten cards, ordered by due date, so a backlog can never flood the mailbox or the model budget.
+**The loop** is a daily batch capped at ten cards, ordered by due date, so a backlog can never flood the mailbox or the model budget.
 
-Context assembly is layered by cost. A light model summarises the card, the full email thread is fetched only after that, and a stronger model summarises the thread and classifies the lead state. Doctrine, banned copy and the vetted reference roster are fetched at run start from the private context repo, so copy rules change without touching the workflow.
+**Context assembly** is layered by cost. A light model summarises the card, the full email thread is fetched only after that, and a stronger model summarises the thread and classifies the lead state. Doctrine, banned copy and the vetted reference roster are fetched at run start from the private context repo, so copy rules change without touching the workflow.
 
-Tool bindings are Gmail for threads and drafts, the CRM REST API over raw HTTP for cards, comments, due dates and stage moves, and two LLM tiers over HTTP.
+**Tool bindings** are Gmail for threads and drafts, the CRM REST API over raw HTTP for cards, comments, due dates and stage moves, and two LLM tiers over HTTP.
 
-Stop conditions. The daily cap, cadence exhaustion after the final touch which retires the card, and the seasonal calendar which suppresses drafting inside blackout windows while leaving reply detection live.
+**Stop conditions.** The daily cap, cadence exhaustion after the final touch which retires the card, and the seasonal calendar which suppresses drafting inside blackout windows while leaving reply detection live.
 
-Human gates. Every outbound email is a draft, the human reviews and sends by hand. Replied leads are never auto-classified into won or lost, they are moved to the engaged stage for human reading. Recorded in decisions 0001 and 0002.
+**Human gates.** Every outbound email is a draft, the human reviews and sends by hand. Replied leads are never auto-classified into won or lost, they are moved to the engaged stage for human reading. Recorded in decisions 0001 and 0002.
 
 ## Stack
 
