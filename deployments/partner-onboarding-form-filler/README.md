@@ -8,7 +8,7 @@ Turns a single input, the prospect's email address, into a complete onboarding p
 
 ## Why it exists
 
-The intake document is the bridge between a won meeting and the provider's proposal, and assembling it by hand meant re-reading the thread, hunting the minutes, retyping contact data and rebuilding the same PDF every time. Worse, hand assembly leaks errors into exactly the artifact the provider prices from. The agent compresses the whole assembly to one instruction and makes the packet's data provenance verbatim-from-source.
+The intake document is the bridge between a won meeting and the provider's proposal, and assembling it by hand meant re-reading the thread, hunting the minutes, retyping contact data and rebuilding the same PDF every time. Worse, hand assembly leaks errors into exactly the artefact the provider prices from. The agent compresses the whole assembly to one instruction and makes the packet's data provenance verbatim-from-source.
 
 ## Architecture
 
@@ -65,4 +65,4 @@ Stale card state. The card may already sit in a later stage than the thread sugg
 
 ## Impact
 
-Packet assembly by hand cost an hour or more per prospect, thread re-reading, contact retyping, minutes hunting and per-prospect PDF rebuilding, with error risk in the priced artifact. Live on real prospects, worked cases produced the filled PDF, the enriched card with minutes and transcript logged, correct due dates and a register-true draft, including one case where the full-board scan caught an existing late-stage card that text search had missed. The estimated return is about an hour per prospect, and one avoided duplicate card or mispriced identifier per batch is worth more than the time. Provider-side turnaround uplift and completion rates of returned forms are not measured.
+Packet assembly by hand cost an hour or more per prospect, thread re-reading, contact retyping, minutes hunting and per-prospect PDF rebuilding, with error risk in the priced artefact. Live on real prospects, worked cases produced the filled PDF, the enriched card with minutes and transcript logged, correct due dates and a register-true draft, including one case where the full-board scan caught an existing late-stage card that text search had missed. The estimated return is about an hour per prospect, and one avoided duplicate card or mispriced identifier per batch is worth more than the time. Provider-side turnaround uplift and completion rates of returned forms are not measured.
