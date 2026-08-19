@@ -18,7 +18,7 @@ Option 3. Markdown is the native read and write format of the agents themselves.
 
 ## Consequences
 
-The store is text only, binaries stay out. Write throughput is one commit per change, irrelevant at agent volume. Concurrency is not solved by the store and had to be solved above it, see decision 0002. The repo's folder convention became a first-class artifact that agents are instructed to obey, structure discipline replaced schema enforcement.
+The store is text only, binaries stay out. Write throughput is one commit per change, irrelevant at agent volume. Concurrency is not solved by the store and had to be solved above it, see decision 0002. The repo's folder convention became a first-class artefact that agents are instructed to obey, structure discipline replaced schema enforcement.
 
 ## Revisit if
 
