@@ -33,7 +33,7 @@ Run report
 
 **The loop** is one nightly pass, per card, strictly non-destructive of meaning, the agent restructures and enriches but never invents. Identity data comes from public registries and the card's own history, and every researched fact lands with its source.
 
-**Stop conditions.** The evidence bar is the hard gate, a card whose contact email cannot be verified from an allowed source is marked blocked rather than promoted, and a duplicate is only relocated when confirmed, ambiguity stays put with a flag.
+**Stop conditions.** The evidence bar is the hard gate, a card whose contact email cannot be verified from an allowed source is marked blocked and held for the human, and a duplicate is only relocated when confirmed, ambiguity stays put with a flag.
 
 **Human gates.** The agent never advances a card to the working pipeline, promotion is a human act. The blocked queue is worked by the human confirming emails from his own correspondence, one confirmation flips a card to ready.
 
