@@ -18,4 +18,4 @@ Regulatory citations, statistics and market data are never fabricated, an unsour
 
 ## Lessons carried
 
-Copy written before the field is understood produces adjective stacks and vendor-grade statistics, because that is all an ungrounded model has. The whole protocol exists to make that failure structurally impossible rather than merely discouraged.
+Copy written before the field is understood produces adjective stacks and vendor-grade statistics, because that is all an ungrounded model has. The whole protocol exists to make that failure structurally impossible.
