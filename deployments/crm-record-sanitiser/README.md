@@ -4,7 +4,7 @@
 
 ## What it does
 
-Cleans the prospect-curation stage of the CRM board every night. Defective cards are rewritten to the canonical lean blocks, titles normalised to the board convention, company registry data researched and filled from public sources, empty angle blocks drafted, sectors tagged, confirmed duplicates relocated to a quarantine section, parallel opportunities documented, and anything the agent cannot fix is flagged rather than guessed. It never advances cards, never creates them, never seeds new prospects. Downstream agents depend on its output, the [discovery follow-up agent](../crm-discovery-followups/README.md) and the [opportunity logger](../crm-opportunity-logger/README.md) both read the blocks it standardises.
+Cleans the prospect-curation stage of the CRM board every night. Defective cards are rewritten to the canonical lean blocks, titles normalised to the board convention, company registry data researched and filled from public sources, empty angle blocks drafted, sectors tagged, confirmed duplicates relocated to a quarantine section, parallel opportunities documented, and anything the agent cannot fix is flagged for the human with the blocker named. It never advances cards, never creates them, never seeds new prospects. Downstream agents depend on its output, the [discovery follow-up agent](../crm-discovery-followups/README.md) and the [opportunity logger](../crm-opportunity-logger/README.md) both read the blocks it standardises.
 
 ## Why it exists
 
