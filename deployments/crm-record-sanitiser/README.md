@@ -50,7 +50,7 @@ Run report
 
 Invented data. The catastrophic failure for a sanitiser, a plausible wrong email is worse than a blank. Handled by the evidence bar, verbatim-from-source discipline, and flagging over guessing. The deep-clean audit showed most cards blocked precisely because no allowed source carried a verifiable email.
 
-Destroying human context. Rewriting a card can lose a note a human relied on. Handled by rewriting structure, not history, enrichment appends and consolidates rather than deletes.
+Destroying human context. Rewriting a card can lose a note a human relied on. Handled by rewriting structure only, enrichment appends and consolidates, and the card's history stays whole.
 
 False duplicate relocation. Merging two genuinely different companies hides an opportunity. Handled by relocating only confirmed duplicates, name similarity alone stays flagged on-card.
 
