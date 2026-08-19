@@ -40,13 +40,13 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 
 **The loop** is feeders in, one judge out. Discovery agents only retrieve and kill at the headline, they never evaluate substance. Everything that survives is written to the pool at ingest status, and a single judging pass runs once per record before the human ever sees it. Recorded in decisions 0003.
 
-**Context assembly.** The judge reads the compiled ruleset, a generated artifact with a version and a hash, never the scattered source rules, and matches substance against a capability model built from an interview-corrected inventory of what the principal can actually defend. Where live law is missing from the artifact the agent stops and reports rather than executing on conversation memory. Recorded in decisions 0001 and 0002.
+**Context assembly.** The judge reads the compiled ruleset, a generated artefact with a version and a hash, never the scattered source rules, and matches substance against a capability model built from an interview-corrected inventory of what the principal can actually defend. Where live law is missing from the artefact the agent stops and reports, the run waits for compiled law. Recorded in decisions 0001 and 0002.
 
 **Tool bindings.** Portal and feed retrieval over raw HTTP, the record pool in Airtable, cards in Asana, judging by Claude agents running as scheduled tasks.
 
 **Stop conditions.** Headline kills write no record, only a tally. A resolution that fails twice on independent surfaces parks the record with the blocker named. A daily card cap and an auto-expiry window keep the queue honest. Negative results follow a surface-authority doctrine, a claim about a listing is only trusted from the surface that owns it.
 
-**Human gates.** The pipeline cards, it never applies, contacts or submits. Every card carries exactly one action comment for the human. Rulings made mid-run that are not yet compiled into the artifact are flagged as unshipped and block the next deployment.
+**Human gates.** The pipeline cards, it never applies, contacts or submits. Every card carries exactly one action comment for the human. Rulings made mid-run that are not yet compiled into the artefact are flagged as unshipped and block the next deployment.
 
 ## Stack
 
@@ -54,7 +54,7 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 |---|---|---|
 | Discovery and feeds | Raw HTTP per source family | Sixteen feed dialects, one thin adapter each |
 | Record pool | Airtable | Dedup keys, status machine and human-inspectable audit in one place |
-| Ruleset | Compiled markdown artifact in git | Versioned, hashed, generated from source rules, never hand-edited |
+| Ruleset | Compiled markdown artefact in git | Versioned, hashed, generated from source rules, never hand-edited |
 | Capability model | Versioned markdown in git | Interview-corrected ground truth the judge matches against |
 | Judgement | Claude agents on scheduled tasks | Body-level reasoning that rules cannot express |
 | Cards | Asana | The surface where the human already works the pipeline |
@@ -64,7 +64,7 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 
 Silent zero-yield runs. A run whose tally sums perfectly can still be a dead agent. Handled with an external yield floor, a run below it is investigated regardless of how clean its report reads.
 
-Judgement drift between runs. The same listing read twice must get the same verdict. Handled by compiling all law into one versioned artifact and forbidding execution on uncompiled chat rulings, plus a golden set of trap cases for regression.
+Judgement drift between runs. The same listing read twice must get the same verdict. Handled by compiling all law into one versioned artefact and forbidding execution on uncompiled chat rulings, plus a golden set of trap cases for regression.
 
 Text gates passing what judgement must kill. Evidence priced on the wrong side of a role survives every keyword gate. Handled by the capability model's direction axis and an honest-expansion probe at judging time.
 
@@ -79,9 +79,9 @@ Tooling defects misread as market facts. A broken search widget looks identical 
 | # | Title |
 |---|---|
 | [0001](decisions/0001-capability-model-over-keyword-matching.md) | Capability model over keyword matching |
-| [0002](decisions/0002-compiled-ruleset-as-the-single-law-artifact.md) | Compiled ruleset as the single law artifact |
+| [0002](decisions/0002-compiled-ruleset-as-the-single-law-artifact.md) | Compiled ruleset as the single law artefact |
 | [0003](decisions/0003-feeders-never-judge-one-shared-judge.md) | Feeders never judge, one shared judge |
 
 ## Impact
 
-Screening was manual browsing across a handful of portals before this, unrecorded, inconsistent between sittings and blind to most of the structured-feed universe. Thirteen production runs have built a shared pool of roughly one hundred and fifty records with full audit trails and delivered nineteen scored cards for human review, every negative disposition carrying a reason code and an evidence trail, and every run report dimensioning its kill tallies by reason and source. As an estimate, manual coverage of the same source universe would cost upwards of ten hours a week, assuming the manual alternative would attempt full coverage, which it never did. Outcome conversion of carded opportunities is not measured yet, the funnel has an entrance and no exit, and an outcomes table is the next build item, stated here rather than hidden.
+Screening was manual browsing across a handful of portals before this, unrecorded, inconsistent between sittings and blind to most of the structured-feed universe. Thirteen production runs have built a shared pool of roughly one hundred and fifty records with full audit trails and delivered nineteen scored cards for human review, every negative disposition carrying a reason code and an evidence trail, and every run report dimensioning its kill tallies by reason and source. As an estimate, manual coverage of the same source universe would cost upwards of ten hours a week, assuming the manual alternative would attempt full coverage, which it never did. Outcome conversion of carded opportunities is not measured yet, the funnel has an entrance and no exit, and an outcomes table is the next build item, stated here in the open.
