@@ -12,7 +12,7 @@ A decision gate runs before anything is filed. A case earns its place only when 
 
 ## Guardrails
 
-Copy is filed verbatim, never paraphrased and never improved in the filing, a cleaned-up bad example teaches nothing. Cases are named by company, never by the person who received the message. Locked cases are reproduced untouched. A vendor or brand name is never carried from one case into another, and when the same case exists with two verdicts the older one is reconciled to the newer judgement rather than leaving contradictions side by side.
+Copy is filed verbatim, never paraphrased and never improved in the filing, a cleaned-up bad example teaches nothing. Cases are named by company, never by the person who received the message. Locked cases are reproduced untouched. A vendor or brand name is never carried from one case into another, and when the same case exists with two verdicts the older one is reconciled to the newer judgement, the library holds one verdict per case.
 
 ## Lessons carried
 
