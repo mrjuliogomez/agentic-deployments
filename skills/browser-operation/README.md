@@ -8,7 +8,7 @@ Codifies the mechanics of operating a real browser on a real person's machine, c
 
 ## How it runs
 
-Clicking prefers element references over coordinates, references survive layout shifts, and any click that reflows the page invalidates every reference captured before it, so it is click one, re-find, click the next. Typing uses the form-input path rather than keystroke simulation wherever possible, reactive web widgets eat leading keystrokes when their state lags the render, and the working pattern is set the value, focus the field, then commit. In any message composer plain Return sends, line breaks are shift plus Return, because the wrong key fires a partial message at a real person and cannot be undone. Every field is verified on a fresh screenshot after setting it, and every change is confirmed on the rendered public view, not the edit form, a save that returned success has still lied before.
+Clicking prefers element references over coordinates, references survive layout shifts, and any click that reflows the page invalidates every reference captured before it, so it is click one, re-find, click the next. Typing uses the form-input path wherever the surface allows it, reactive web widgets eat leading keystrokes when their state lags the render, and the working pattern is set the value, focus the field, then commit. In any message composer plain Return sends, line breaks are shift plus Return, because the wrong key fires a partial message at a real person and cannot be undone. Every field is verified on a fresh screenshot after setting it, and every change is confirmed on the rendered public view, not the edit form, a save that returned success has still lied before.
 
 ## Guardrails
 
