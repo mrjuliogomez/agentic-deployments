@@ -4,7 +4,7 @@
 
 ## What it does
 
-Produces a weekly summary of the top ten tasks owed, read across email and the CRM. One ranked list with owner and age, so the week starts with the ten things that actually matter rather than whatever surfaced last.
+Produces a weekly summary of the top ten tasks owed, read across email and the CRM. One ranked list with owner and age, so the week starts with the ten things that actually matter.
 
 ## Why it exists
 
