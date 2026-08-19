@@ -14,7 +14,7 @@ The hard gate is the completeness checkpoint. A card is not done until every req
 
 ## Guardrails
 
-Legal names, identifiers and addresses are verbatim from source, never invented, and reconstructions are flagged for verification. One creation call per card, never bulk. Stage placement follows evidence, and where the phase is not unambiguous the skill asks rather than assumes, a wrong stage either cold-pitches a live account or registers an opportunity that had no real interaction.
+Legal names, identifiers and addresses are verbatim from source, never invented, and reconstructions are flagged for verification. One creation call per card, never bulk. Stage placement follows evidence, and where the phase is not unambiguous the skill asks first, a wrong stage either cold-pitches a live account or registers an opportunity that had no real interaction.
 
 ## Lessons carried
 
