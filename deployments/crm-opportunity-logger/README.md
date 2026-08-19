@@ -4,7 +4,7 @@
 
 ## What it does
 
-Registers qualified opportunities from the CRM board into the Partner network's portal. Each night it polls the engaged stage of the board, skips every card already carrying the logged marker, and submits each remaining opportunity through the portal's quote form via a headless browser. On a confirmed record it posts an audit comment to the card and sets the follow-up due date. Cards never move stage, registration is a side effect, not a pipeline event.
+Registers qualified opportunities from the CRM board into the Partner network's portal. Each night it polls the engaged stage of the board, skips every card already carrying the logged marker, and submits each remaining opportunity through the portal's quote form via a headless browser. On a confirmed record it posts an audit comment to the card and sets the follow-up due date. Cards keep their stage, registration is a side effect recorded on the card.
 
 ## Why it exists
 
@@ -32,13 +32,13 @@ Audit comment on card ──> due date set ──> ledger append
 
 **The loop** is a nightly batch over one board stage, idempotence first, the marker check runs before any model or browser cost is spent, so a done card costs nothing and can never re-register.
 
-**Deduplication** works in three layers. First the card marker, on a confirmed registration the agent writes an audit comment to the card, and on every later run that marker is checked before anything else, so re-registration from the same card is impossible. Second the ledger, every confirmed registration appends a row to a board-wide registration ledger keyed by the company's VAT registration identifier. The key is the company, not the card, so the same company reached through a different card, a different board section or a renamed lead still collides with its existing ledger row. Names drift, identifiers do not. Third the checksum, VAT registration identifiers are checksum-validated in code before submission, so a mistyped identifier can neither register against the wrong company nor corrupt the ledger key. The automatic ledger gate inside the nightly run is the standing open item, today the marker and the checksum run in-line and the ledger is reconciled against the portal by hand, stated here rather than hidden.
+**Deduplication** works in three layers. First the card marker, on a confirmed registration the agent writes an audit comment to the card, and on every later run that marker is checked before anything else, so re-registration from the same card is impossible. Second the ledger, every confirmed registration appends a row to a board-wide registration ledger keyed by the company's VAT registration identifier. The key is the company itself, so the same company reached through a different card, a different board section or a renamed lead still collides with its existing ledger row. Names drift, the identifier holds, and the ledger keys on what holds. Third the checksum, VAT registration identifiers are checksum-validated in code before submission, so a mistyped identifier can neither register against the wrong company nor corrupt the ledger key. The automatic ledger gate inside the nightly run is the standing open item, today the marker and the checksum run in-line and the ledger is reconciled against the portal by hand, stated here in the open.
 
 **Context assembly** is the card itself, the canonical contact and company blocks maintained upstream by the [record sanitiser](../crm-record-sanitiser/README.md), including the VAT registration identifier the form requires.
 
 **Tool bindings** are the CRM REST API over HTTP and a headless browser service driving the portal form. The portal has no API, so the form was reverse-engineered field by field, including the checksum the portal validates client-side, which the agent validates itself before ever opening a browser.
 
-**Stop conditions.** No confirmed record, no card write. The success signal is the portal's confirmation redirect and it is treated as a signal rather than a receipt. Unparseable or checksum-failing cards are held with a comment instead of submitted wrong.
+**Stop conditions.** No confirmed record, no card write. The success signal is the portal's confirmation redirect, and the agent treats it as a signal, the receipt is the reconciled ledger. Unparseable or checksum-failing cards are held with a comment instead of submitted wrong.
 
 **Human gates.** The ledger is reconciled by hand against the portal, and portal-side cleanup of test or duplicate records goes through the human because the portal offers no partner-side deletion.
 
@@ -60,8 +60,8 @@ Registering junk. A mistyped VAT registration identifier fails at the portal or,
 
 Phantom success. The portal's confirmation page is generic. Handled by treating the redirect as a signal, writing the audit trail only after it, and reconciling the ledger against the portal by hand.
 
-Retry loops wallpapering cards. A held card once collected three identical hold comments in five minutes. Comment dedup on the retry path is a known open item, stated here rather than hidden.
+Retry loops wallpapering cards. A held card once collected three identical hold comments in five minutes. Comment dedup on the retry path is a known open item, stated here in the open.
 
 ## Impact
 
-Registration went from ten to twenty minutes of hand-typing per opportunity to zero human time. The agent was validated end to end on live opportunities, real registrations confirmed in the portal with audit comments and due dates written back, and no double registration has occurred on marked cards. The ledger holds the full registration history, over one hundred and thirty records keyed by VAT registration identifier, and the research gathered per registration enriches the CRM card rather than dying in the form. What is not measured is the commercial value of registration priority and the rate of portal-side conflicts avoided.
+Registration went from ten to twenty minutes of hand-typing per opportunity to zero human time. The agent was validated end to end on live opportunities, real registrations confirmed in the portal with audit comments and due dates written back, and no double registration has occurred on marked cards. The ledger holds the full registration history, over one hundred and thirty records keyed by VAT registration identifier, and the research gathered per registration enriches the CRM card, so the work compounds past the form. What is not measured is the commercial value of registration priority and the rate of portal-side conflicts avoided.
