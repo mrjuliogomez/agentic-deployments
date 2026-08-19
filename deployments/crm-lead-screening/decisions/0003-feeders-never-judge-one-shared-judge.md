@@ -21,4 +21,4 @@ The pool is the interface, feeders and judge agree on a record contract and noth
 
 ## Revisit if
 
-Judge throughput becomes the bottleneck, which would argue for sharding the judge while keeping the single law artifact.
+Judge throughput becomes the bottleneck, which would argue for sharding the judge while keeping the single law artefact.
