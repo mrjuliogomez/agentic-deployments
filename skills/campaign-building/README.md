@@ -10,7 +10,7 @@ Runs the full research-to-copy pipeline for a cold outbound campaign and produce
 
 Two blocking gates run before a single line of copy. The grounding gate requires the counterparty file, the communication doctrine, the sales playbook and any existing campaign brief read in full in the session, memory does not substitute. The field mastery gate requires a deep analysis across three legs, the product and its capability chain by exact designation, the industry and its regulation with the bodies and dates that govern it, and the buyer's processes and pains. The gate has no skip for familiar categories, familiarity with a provider is not mastery of a field, and its output is a brief the operator signs before copy exists.
 
-Then intake, ten structured questions, an eight-block research protocol filling a fixed schema with every claim sourced or explicitly marked not found, schema validation, and copy generation. Every line passes a stress gate, the opener is a verifiable top-authority anchor, every sentence must demonstrate rather than assert, carry a checkable source, and earn its place, every decision must sit inside the reader's remit and survive its strongest counterargument.
+Then intake, ten structured questions, an eight-block research protocol filling a fixed schema with every claim sourced or explicitly marked not found, schema validation, and copy generation. Every line passes a stress gate, the opener is a verifiable top-authority anchor, every sentence must demonstrate its claim, carry a checkable source, and earn its place, every decision must sit inside the reader's remit and survive its strongest counterargument.
 
 ## Guardrails
 
