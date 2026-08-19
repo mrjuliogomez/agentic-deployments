@@ -14,7 +14,7 @@ Then intake, ten structured questions, an eight-block research protocol filling 
 
 ## Guardrails
 
-Regulatory citations, statistics and market data are never fabricated, an unsourceable field is flagged and the build stops rather than shipping an invented anchor. Sequences are rebuilt whole, never patched, a foundation change triggers a full rewrite under one locked spec because a half-converted sequence reads as inconsistent to the one human who receives it across a year. No campaign loads until the exclusion list is complete across all five categories, cited references, protected accounts, the live negotiation pipeline, the provider's full existing portfolio and channel-conflict accounts, and the last two require live sources, never memory.
+Regulatory citations, statistics and market data are never fabricated, an unsourceable field is flagged and the build stops until a real source lands. Sequences are rebuilt whole, never patched, a foundation change triggers a full rewrite under one locked spec because a half-converted sequence reads as inconsistent to the one human who receives it across a year. No campaign loads until the exclusion list is complete across all five categories, cited references, protected accounts, the live negotiation pipeline, the provider's full existing portfolio and channel-conflict accounts, and the last two require live sources, never memory.
 
 ## Lessons carried
 
