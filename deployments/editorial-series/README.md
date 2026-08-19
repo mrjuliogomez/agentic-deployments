@@ -8,7 +8,7 @@ Publishes a proprietary long-form culture essay series across three channels, a 
 
 ## Why it exists
 
-The series is original thought-leadership content, not news rewriting, so it needed its own pipeline with a locked voice and a curated queue. Writing and distributing one researched essay across three channels by hand costs a working morning. The pipeline reduces the human role to curating the topic queue and reading the live posts.
+The series is original thought-leadership content, so it needed its own pipeline with a locked voice and a curated queue. Writing and distributing one researched essay across three channels by hand costs a working morning. The pipeline reduces the human role to curating the topic queue and reading the live posts.
 
 ## Architecture
 
