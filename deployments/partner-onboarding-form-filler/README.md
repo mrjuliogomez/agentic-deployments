@@ -40,7 +40,7 @@ Human reviews, attaches, sends
 
 **Stop conditions.** No thread found means stop and ask, some conversations live in unconnected mailboxes and guessing is forbidden. Registry identifiers are verbatim from source or absent.
 
-**Human gates.** The email never sends itself, it is a draft, and attachments are added by hand at send time. One card per lead is a hard rule, the agent updates the furthest-stage card rather than creating a duplicate, and a duplicate created in error is consolidated and deleted.
+**Human gates.** The email never sends itself, it is a draft, and attachments are added by hand at send time. One card per lead is a hard rule, the agent always updates the furthest-stage card, and a duplicate created in error is consolidated and deleted.
 
 ## Stack
 
