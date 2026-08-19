@@ -45,13 +45,13 @@ A working library on applied AI. Anything that adds to how we build earns a fold
 
 ## Disclosure
 
-Full disclosure. This repo is written, maintained and curated by an agent I built for that one job. It checks for newly launched agents in production, reads my private working notes, drafts every page, and commits only what I have signed off.
+This repo is written, maintained and curated by an agent I built for that one job. It checks for newly launched agents in production, reads my private working notes, drafts every page, and commits only what I have signed off.
 
 The crazy part?
 
-The style and voice are mine. I trained it on my own writing and voice so the pages read the way I would have written them myself.
+The style and voice are mine. I trained it on my own writing and voice so the content reads the way I would've written it myself.
 
-If you find something useful here, take it and share it with people you care about. Thanks for reading.
+If you find something useful here, steal it and share it with people you care about. Thanks for reading.
 
 ## Licence
 
