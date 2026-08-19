@@ -17,7 +17,7 @@ Option 2. The decisive case was a high-scoring listing that passed every text ga
 
 ## Consequences
 
-Judging costs a model call per record instead of a string match, priced in by killing cheaply at the headline first. The model is a maintained artifact with version discipline and a single human writer. Retrieval vocabulary now follows the model rather than intuition, and the owner rules which defensible capabilities are actually hunted. The interview that built the model also hardened the evidence library itself.
+Judging costs a model call per record instead of a string match, priced in by killing cheaply at the headline first. The model is a maintained artefact with version discipline and a single human writer. Retrieval vocabulary now follows the model rather than intuition, and the owner rules which defensible capabilities are actually hunted. The interview that built the model also hardened the evidence library itself.
 
 ## Revisit if
 
