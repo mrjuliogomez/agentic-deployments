@@ -8,7 +8,7 @@ Defines the single card standard the whole agent fleet reads and writes. One car
 
 ## How it runs
 
-The first contact line is the deterministic recipient, position carries the meaning and the outbound agent emails exactly that person, so recipient correctness is a hard gate rather than a nicety. Won-stage economics travel on a single machine-parseable value line holding the net figure, its source references and its update date. Conversation state is never asserted from search previews, the full thread is read for every contact on the card before any claim about who said what last. Duplicates are defined narrowly, same company and same first contact, anything else with the same company is a parallel opportunity kept live and cross-linked. Stage moves follow furthest-phase-wins, and a card never sits in the automated cold-stage lane while a live human conversation is running, the automated agent would fire on top of it.
+The first contact line is the deterministic recipient, position carries the meaning and the outbound agent emails exactly that person, so recipient correctness is a hard gate. Won-stage economics travel on a single machine-parseable value line holding the net figure, its source references and its update date. Conversation state is never asserted from search previews, the full thread is read for every contact on the card before any claim about who said what last. Duplicates are defined narrowly, same company and same first contact, anything else with the same company is a parallel opportunity kept live and cross-linked. Stage moves follow furthest-phase-wins, and a card never sits in the automated cold-stage lane while a live human conversation is running, the automated agent would fire on top of it.
 
 ## Guardrails
 
