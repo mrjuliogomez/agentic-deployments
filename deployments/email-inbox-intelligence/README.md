@@ -68,7 +68,7 @@ Misclassification filing something that mattered. The costliest possible error. 
 
 Reply sent on a stale thread. Handled by keeping every reply a draft, the human is the currency check at send time.
 
-Reschedules missed after the event was created. Handled by treating reschedule replies as a first-class lane on later runs, the calendar entry follows the thread rather than freezing at creation.
+Reschedules missed after the event was created. Handled by treating reschedule replies as a first-class lane on later runs, the calendar entry follows the thread wherever it moves after creation.
 
 Task cards created without context. A task with no sources just moves the digging downstream. Handled by attaching source documents and notes at creation, the card is complete or it is not created.
 
