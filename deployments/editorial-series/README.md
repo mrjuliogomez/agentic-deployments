@@ -4,7 +4,7 @@
 
 ## What it does
 
-Publishes a proprietary long-form culture essay series across three channels, a Wix blog, a LinkedIn personal profile and X. Topics come from a curated, pre-written queue rather than feeds. Each run picks the next topic, checks it against recent output, researches it, writes three channel-fitted versions in a single bespoke essay voice, generates an abstract image with a deterministic text overlay, and publishes to all three channels from one trigger.
+Publishes a proprietary long-form culture essay series across three channels, a Wix blog, a LinkedIn personal profile and X. Topics come from a curated queue of pre-written seeds the operator maintains. Each run picks the next topic, checks it against recent output, researches it, writes three channel-fitted versions in a single bespoke essay voice, generates an abstract image with a deterministic text overlay, and publishes to all three channels from one trigger.
 
 ## Why it exists
 
