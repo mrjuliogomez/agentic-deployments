@@ -47,7 +47,7 @@ Run report
 
 **Tool bindings** are Gmail, the calendar, the CRM, spreadsheets and web research, all through the agent's standard tool surface.
 
-**Stop conditions.** The inbox window bounds each run, and anything the classifier cannot place with confidence stays in the inbox for the human rather than being filed on a guess.
+**Stop conditions.** The inbox window bounds each run, and anything the classifier cannot place with confidence stays in the inbox for the human, filing waits for confidence.
 
 **Human gates.** Every outbound reply is a draft, the human sends. Filing and peripheral updates run autonomously, they are reversible. The prep note and the attached sources are decision support, the decisions stay human.
 
