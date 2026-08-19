@@ -8,7 +8,7 @@ Holds the single source of truth for the visual and verbal identity of every cli
 
 ## How it runs
 
-The precedence rule is the whole design. Identity is never re-derived, re-negotiated or improved inside a document session, if an element seems wrong it is flagged to the human, never forked. Every document session reads this canon first, then the document-type skill, then builds from shared components. The finished document is converted and checked against an identity checklist, cover order, footer lines, one entity mention, token colours, strip composition, and any deviation is regenerated, not patched. Reference strips regenerate from registry files that track which logos are cleared for use, the repo stores recipes, never loose binaries.
+The precedence rule is the whole design. Identity is never re-derived, re-negotiated or improved inside a document session, if an element seems wrong it is flagged to the human, never forked. Every document session reads this canon first, then the document-type skill, then builds from shared components. The finished document is converted and checked against an identity checklist, cover order, footer lines, one entity mention, token colours, strip composition, and any deviation is regenerated whole. Reference strips regenerate from registry files that track which logos are cleared for use, the repo stores recipes, never loose binaries.
 
 ## Guardrails
 
