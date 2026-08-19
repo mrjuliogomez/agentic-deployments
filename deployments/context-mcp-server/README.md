@@ -30,7 +30,7 @@ GitHub Contents API (token in server env, never in any session)
 
 **The loop** is stateless request and response, one tool call at a time, a fresh server instance per request so no session leaks into another.
 
-**Context assembly** is the point of the server rather than a step in it, sessions read the portfolio at start and write back at close per the repo's own conventions.
+**Context assembly** is the whole purpose of the server, sessions read the portfolio at start and write back at close per the repo's own conventions.
 
 **Tool bindings** are the GitHub REST API with the token held as a server environment variable. No credential ever crosses a chat surface, sessions authenticate to the server, the server authenticates to GitHub.
 
