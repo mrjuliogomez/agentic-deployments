@@ -42,7 +42,7 @@ Prep Media ── image valid? ──no──> log MEDIA_FAIL, drop
 
 **Context assembly** happens in two stages. A research stage builds a sourced brief for the article, then a write stage receives that brief plus a voice library. The model selects the voice from a menu gated by channel, so each channel only ever receives voices approved for it. Personas bias the choice but cannot force it, which keeps output varied without hard routing code.
 
-**Tool bindings** are raw HTTP calls to each provider REST API rather than the platform's native integration nodes. Recorded in decisions 0001, after three production failures on three different channels.
+**Tool bindings** are raw HTTP calls to each provider REST API, with the platform's native integration nodes retired from every branch. Recorded in decisions 0001, after three production failures on three different channels.
 
 **Stop conditions.** A semantic dedup gate drops any item whose embedding scores at or above the similarity threshold against the trailing window of published output. An image validity gate drops items whose media fails, logging them under a failure status rather than publishing without imagery. Every publish node carries retry with backoff and continue-on-error wiring so one channel failing cannot cascade into the others.
 
