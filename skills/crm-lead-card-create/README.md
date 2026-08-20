@@ -6,6 +6,26 @@
 
 Turns whatever input arrives into a complete, registrable lead card in the CRM. Extracts the contact and company, deduplicates against the whole board, disqualifies structurally hopeless entries before spending effort, researches the legal entity from public registries, builds the card to the canonical block standard defined in [crm-lead-card-standard](../crm-lead-card-standard/README.md), places it in the stage the evidence supports, and records provenance in a creation comment.
 
+## Flow
+
+```
+input, thread, profile, screenshot or company name
+   |
+dedupe across the whole board ──match──> update, never create
+   |
+structural disqualifier? ──yes──> closed lane, reason, stop
+   |no
+registry research, fixed source ladder
+   |
+VAT identifier checksum ──fail──> pending, never recorded wrong
+   |
+build canonical blocks ──> completeness checkpoint
+   |                              |fail
+stage by evidence            incomplete holding section,
+   |                         missing fields named for a human
+creation comment, provenance recorded
+```
+
 ## How it runs
 
 The order is deliberate. Dedupe first, same company and same contact means update the existing card, never create, while the same company with a different contact is a parallel opportunity, both cards live and cross-linked. Disqualify second, an entity that can never be registered, foreign with no local company, dissolved, or a test placeholder, goes straight to the closed lane with a reason and consumes no research. Research third, a fixed source ladder from plain search through registry aggregators to the company's own legal notices, and a value is only marked pending after the ladder is exhausted with the searches named. The VAT registration identifier is checksum-validated in code, a well-formed but invalid identifier is recorded as pending, never as the identifier.
