@@ -6,6 +6,23 @@
 
 Governs how work built and run privately gets described in the public agent portfolio, a fixed repository structure, a fixed set of document skeletons for deployments, skills and decision records, a naming law that renames every private, partner or platform-specific label into a description of what the agent actually does, a language law that strips internal jargon, dates, commercial terms and any name beyond the operator's own, and a voice law that keeps every published sentence in the operator's own register.
 
+## Flow
+
+```
+private build record
+   |
+slug mapping, fixed and consulted, never improvised
+   |
+draft to the skeleton ──> voice loop, spec + reviewer
+   |
+new folder? ──> human sign-off ──> push
+refresh?    ──> material fact only ──> push
+   |
+sweep for banned language ──> any hit? revert
+   |
+run report
+```
+
 ## How it runs
 
 Every private project maps to a public slug that describes its function, never a partner name, a platform name or a persona, and that mapping is fixed and consulted before any new item is drafted, never improvised per session. New deployments and skills are drafted in full but never pushed autonomously, they wait for a human sign-off before the folder is created. Existing public items are only ever touched for a material fact that actually changed, a resolved failure mode or a new measured number, never rewritten wholesale on a routine pass. Architecture decisions only get a permanent record where a real fork in the build actually happened, and once written that record is never edited again, a changed decision gets a new record that supersedes the old one instead. Every session that writes to the public repository re-reads what it just wrote and sweeps it for banned language before considering the write final.
