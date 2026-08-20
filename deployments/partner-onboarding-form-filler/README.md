@@ -46,10 +46,10 @@ Human reviews, attaches, sends
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Runtime | Cowork skill | Multi-tool orchestration with judgement at each step |
-| Email | Gmail | Thread history and the outbound draft |
-| CRM | Asana | Card find-or-update across the full board |
-| Meeting records | Google Drive | Minutes and transcripts from recorded meetings |
+| Runtime | [Claude](https://claude.com) Cowork skill | Multi-tool orchestration with judgement at each step |
+| Email | [Gmail](https://workspace.google.com) | Thread history and the outbound draft |
+| CRM | [Asana](https://asana.com) | Card find-or-update across the full board |
+| Meeting records | [Google Drive](https://workspace.google.com) | Minutes and transcripts from recorded meetings |
 | Document build | Code-rendered PDF | Deterministic layout, fillable fields, brand by code |
 | Document spec | Private context repo | The intake layout versioned outside the session |
 
