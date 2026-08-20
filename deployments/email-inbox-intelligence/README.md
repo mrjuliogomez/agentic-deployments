@@ -55,10 +55,10 @@ Run report
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Runtime | Cowork scheduled task | The agent surface with native reach into every tool below |
-| Email | Gmail | Where the inbox is |
-| Calendar | Google Calendar | Event writes and conflict checks in one place |
-| CRM | Asana | Tasks land where the work is managed |
+| Runtime | [Claude](https://claude.com) Cowork scheduled task | The agent surface with native reach into every tool below |
+| Email | [Gmail](https://workspace.google.com) | Where the inbox is |
+| Calendar | [Google Calendar](https://workspace.google.com) | Event writes and conflict checks in one place |
+| CRM | [Asana](https://asana.com) | Tasks land where the work is managed |
 | Documents | Spreadsheets and project files | Peripherals updated in place, no parallel copies |
 | Research | Web search | Counterparty background for prep notes |
 
