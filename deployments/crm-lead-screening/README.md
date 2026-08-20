@@ -53,7 +53,7 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 | Layer | Tool | Why this one |
 |---|---|---|
 | Discovery and feeds | Raw HTTP per source family | Sixteen feed dialects, one thin adapter each |
-| Record pool | Airtable | Dedup keys, status machine and human-inspectable audit in one place |
+| Record pool | [Airtable](https://airtable.com) | Dedup keys, status machine and human-inspectable audit in one place |
 | Ruleset | Compiled markdown artefact in git | Versioned, hashed, generated from source rules, never hand-edited |
 | Capability model | Versioned markdown in git | Interview-corrected ground truth the judge matches against |
 | Judgement | Claude agents on scheduled tasks | Body-level reasoning that rules cannot express |
