@@ -6,6 +6,24 @@
 
 Files real communication cases, outreach, follow-ups, objection handling, negotiation, collections, conflict, into a reference library so that best practice accumulates and anti-patterns stay visible. Each case is a structured block, the trigger context, the verbatim copy, and the tight list of reasons it worked or failed. The library is what future drafting sessions calibrate against.
 
+## Flow
+
+```
+candidate case, a message or an exchange
+   |
+decision gate ── outcome attributable to a
+   |             communication decision, or a
+   |             genuinely reusable pattern?
+   |no ──> not filed
+   |yes
+route ── counterparty file or function playbook
+   |
+file verbatim ── trigger context, exact copy,
+   |             reasons it worked or failed
+good cases lead, bad cases close,
+every bad block labelled anti-pattern
+```
+
 ## How it runs
 
 A decision gate runs before anything is filed. A case earns its place only when the outcome is clearly attributable to a specific communication decision, or the pattern is genuinely reusable, a single reply is not yet a case and filing every message by reflex would bury the library in noise. Routing follows the lesson, cases whose lesson only makes sense for one counterparty's product go in that counterparty's example file, cross-cutting technique goes in the function playbook. Good cases lead, bad cases close, and every bad block is explicitly labelled an anti-pattern because the last block in a file anchors hardest on a read, an unlabelled failure at the end risks being imitated instead of avoided.
