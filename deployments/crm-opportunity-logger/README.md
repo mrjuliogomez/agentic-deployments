@@ -46,9 +46,9 @@ Audit comment on card ──> due date set ──> ledger append
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Orchestration | n8n Cloud | Shared platform across the agent fleet |
-| CRM | Asana via REST over HTTP | The board is the single working surface |
-| Form submission | Browserless headless browser | The portal has no API, the form is the API |
+| Orchestration | [n8n Cloud](https://n8n.io) | Shared platform across the agent fleet |
+| CRM | [Asana](https://asana.com) via REST over HTTP | The board is the single working surface |
+| Form submission | [Browserless](https://browserless.io) headless browser | The portal has no API, the form is the API |
 | Validation | VAT identifier checksum in code | Reject bad identifiers before they reach the portal |
 | Ledger | Markdown in the private context repo | VAT-keyed registration history, human-readable |
 
