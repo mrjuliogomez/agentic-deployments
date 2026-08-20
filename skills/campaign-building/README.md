@@ -6,6 +6,27 @@
 
 Runs the full research-to-copy pipeline for a cold outbound campaign and produces a complete campaign brief document, schema, sequences, exclusion list, ready to load into outreach tooling. Output is a multi-wave email sequence plus a parallel messaging sequence, every email in a locked consultant register that opens on a sourced authority anchor.
 
+## Flow
+
+```
+campaign request, product + persona
+   |
+grounding gate ── counterparty file, doctrine,
+   |               playbook read in full this session
+field mastery gate ── product chain, industry and
+   |                  regulation, buyer pains
+   |                  (operator signs the brief)
+intake, ten structured questions
+   |
+research protocol, eight blocks, every claim sourced
+   |
+schema validation ──> copy generation, wave by wave
+   |
+stress gate per line ──> exclusion list complete?
+   |
+ready to load
+```
+
 ## How it runs
 
 Two blocking gates run before a single line of copy. The grounding gate requires the counterparty file, the communication doctrine, the sales playbook and any existing campaign brief read in full in the session, memory does not substitute. The field mastery gate requires a deep analysis across three legs, the product and its capability chain by exact designation, the industry and its regulation with the bodies and dates that govern it, and the buyer's processes and pains. The gate has no skip for familiar categories, familiarity with a provider is not mastery of a field, and its output is a brief the operator signs before copy exists.
