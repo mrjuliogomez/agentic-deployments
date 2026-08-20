@@ -52,14 +52,14 @@ Prep Media ── image valid? ──no──> log MEDIA_FAIL, drop
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Orchestration | n8n Cloud | Visual debugging of a long pipeline, no infrastructure to run |
-| Scraping | Apify | Managed scraping without maintaining browser infrastructure |
-| HTML extraction | r.jina.ai | Clean article text from arbitrary pages with one call |
-| Structured extraction | Gemini | Cheap and fast for HTML to JSON conversion |
-| Embeddings | OpenAI | Small embedding model, cheap enough to embed every candidate |
-| Research and writing | Claude | Strongest long-form writing and instruction following of the options tried |
-| Dedup and logging | Google Sheets | Zero setup, human-inspectable, adequate at current volume |
-| Dedup successor | Supabase pgvector | Sheets degrades past a few hundred rows, migration scoped |
+| Orchestration | [n8n Cloud](https://n8n.io) | Visual debugging of a long pipeline, no infrastructure to run |
+| Scraping | [Apify](https://apify.com) | Managed scraping without maintaining browser infrastructure |
+| HTML extraction | [r.jina.ai](https://jina.ai) | Clean article text from arbitrary pages with one call |
+| Structured extraction | [Gemini](https://cloud.google.com/vertex-ai) | Cheap and fast for HTML to JSON conversion |
+| Embeddings | [OpenAI](https://openai.com) | Small embedding model, cheap enough to embed every candidate |
+| Research and writing | [Claude](https://claude.com) | Strongest long-form writing and instruction following of the options tried |
+| Dedup and logging | [Google Sheets](https://workspace.google.com) | Zero setup, human-inspectable, adequate at current volume |
+| Dedup successor | [Supabase](https://supabase.com) pgvector | Sheets degrades past a few hundred rows, migration scoped |
 | Publishing | Provider REST APIs via HTTP | Native integration nodes mask provider errors, see decisions 0001 |
 
 ## Failure modes and handling
