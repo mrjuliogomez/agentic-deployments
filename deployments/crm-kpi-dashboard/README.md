@@ -38,9 +38,9 @@ Top-ten summary delivered
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Runtime | Cowork scheduled task | Cross-source reading plus ranking judgement |
-| Email | Gmail | Where commitments hide |
-| CRM | Asana | Where tasks are tracked |
+| Runtime | [Claude](https://claude.com) Cowork scheduled task | Cross-source reading plus ranking judgement |
+| Email | [Gmail](https://workspace.google.com) | Where commitments hide |
+| CRM | [Asana](https://asana.com) | Where tasks are tracked |
 
 ## Failure modes and handling
 
