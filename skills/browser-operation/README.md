@@ -6,6 +6,24 @@
 
 Codifies the mechanics of operating a real browser on a real person's machine, clicking, typing, form filling, verification and cleanup. Platform-specific behaviour and message copy live in their own skills, this one owns only the mechanics, and every rule in it was earned live, where something broke or nearly shipped wrong the failure is recorded beside the rule.
 
+## Flow
+
+```
+task in the human's own browser
+   |
+find element by reference ──> click ──> page reflowed?
+   |                                       |yes, re-find first
+form fields ── set value, focus, commit
+   |
+verify on a fresh screenshot
+   |
+confirm on the rendered public view, never the edit form
+   |
+irreversible action? ──> compose, show, wait for the yes
+   |
+task ends ──> close every tab opened, announce it
+```
+
 ## How it runs
 
 Clicking prefers element references over coordinates, references survive layout shifts, and any click that reflows the page invalidates every reference captured before it, so it is click one, re-find, click the next. Typing uses the form-input path wherever the surface allows it, reactive web widgets eat leading keystrokes when their state lags the render, and the working pattern is set the value, focus the field, then commit. In any message composer plain Return sends, line breaks are shift plus Return, because the wrong key fires a partial message at a real person and cannot be undone. Every field is verified on a fresh screenshot after setting it, and every change is confirmed on the rendered public view, not the edit form, a save that returned success has still lied before.
