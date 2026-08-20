@@ -47,11 +47,11 @@ Route by state
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Orchestration | n8n Cloud | Shared platform across the agent fleet |
-| Email | Gmail | Thread history and the human-gated drafts folder |
-| CRM | Asana via REST over HTTP | The board is the operating surface the human already lives in |
-| Light summarisation | Claude Haiku class | Card summaries are cheap and constant, cost tiering matters |
-| Thread reasoning and drafting | Claude Sonnet class | State classification and register-true drafting need the stronger tier |
+| Orchestration | [n8n Cloud](https://n8n.io) | Shared platform across the agent fleet |
+| Email | [Gmail](https://workspace.google.com) | Thread history and the human-gated drafts folder |
+| CRM | [Asana](https://asana.com) via REST over HTTP | The board is the operating surface the human already lives in |
+| Light summarisation | [Claude](https://claude.com) Haiku class | Card summaries are cheap and constant, cost tiering matters |
+| Thread reasoning and drafting | [Claude](https://claude.com) Sonnet class | State classification and register-true drafting need the stronger tier |
 | Copy doctrine | Private context repo over HTTP | Copy rules versioned in git, changed without redeploying |
 
 ## Failure modes and handling
