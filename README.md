@@ -4,6 +4,44 @@ Agentic AI systems in production. Deployment write-ups, the skills that operate 
 
 Everything here runs, or ran, on real work, publishing, CRM operations, email, document production. Each deployment folder carries the full write-up, what the agent does, why it exists, its architecture, its harness, its stack, its failure modes and its measured impact, plus decision records where a real fork existed. Agents marked Live run in production, with scheduled runs throttled or paused during low-activity periods so the token budget goes to builds in progress.
 
+## What it returns
+
+The numbers below are aggregated from the per-agent Impact sections, each one measured on the live system. A standing inbox of four hundred to six hundred emails now holds single digits. The publishing log passed two thousand rows across four channels with duplicate publishing at zero since the dedup fix. Opportunity registration went from ten to twenty minutes of hand-typing per deal to zero human time, with over one hundred and thirty registrations in the ledger. Daily follow-ups, nightly record hygiene and weekly reporting run without a human in the loop, and every outbound email still crosses a human's send button.
+
+## How the fleet fits together
+
+```
+                        context-mcp-server
+              shared git-backed memory with guarded writes,
+                 read and written by every agent below
+                                |
+     ┌──────────────────┬──────┴───────────┬─────────────────────┐
+     |                  |                  |                     |
+ EDITORIAL          CRM BOARD         OPPORTUNITIES            INBOX
+     |                  |                  |                     |
+ editorial-         crm-record-       crm-lead-screening    email-inbox-
+ publishing         sanitiser         portals, feeds and    intelligence
+ editorial-         nightly clean     sweeps into scored    daily triage,
+ series                 |             cards                 four lanes
+     |                  v                  |                     |
+     v              crm-discovery-         └───── shared ────────┘
+ X, LinkedIn,       followups                pool and ruleset
+ Wix                daily drafts
+                        |
+                        v
+                    crm-opportunity-logger
+                    nightly registration
+                        |
+                    partner-onboarding-form-filler
+                    on demand, intake packet
+
+          crm-kpi-dashboard reads email and board weekly
+```
+
+## Built on
+
+The fleet runs on a deliberately small toolchain. [Claude](https://claude.com) Cowork hosts the reasoning agents as scheduled tasks and skills. [n8n Cloud](https://n8n.io) orchestrates the deterministic pipelines. A custom [Model Context Protocol](https://modelcontextprotocol.io) server on [Railway](https://railway.com) gives every agent shared git-backed memory over [GitHub](https://github.com). The CRM is [Asana](https://asana.com) on the free tier, the record pool is [Airtable](https://airtable.com), logging and dedup ride on [Google Sheets](https://workspace.google.com), and mail and calendar are [Gmail](https://workspace.google.com) and Google Calendar. Publishing goes through the [X](https://developer.x.com), [LinkedIn](https://developer.linkedin.com) and [Wix](https://dev.wix.com) APIs over raw HTTP, scraping through [Apify](https://apify.com) and [r.jina.ai](https://jina.ai), headless form work through [Browserless](https://browserless.io), embeddings through [OpenAI](https://openai.com), image generation through [Vertex AI](https://cloud.google.com/vertex-ai), and the dedup successor is [Supabase](https://supabase.com) pgvector. Reproducing the pattern needs those accounts and nothing exotic, the expensive part is the operating discipline documented in these pages, and the write-ups carry that in full.
+
 ## Deployments
 
 | Deployment | What it is | Status |
@@ -52,6 +90,10 @@ The crazy part?
 The style and voice are mine. I trained it on my own writing and voice so the content reads the way I would've written it myself.
 
 If you find something useful here, steal it and share it with people you care about. Thanks for reading.
+
+## Questions and maintainer
+
+Maintained by [Julio Gómez](https://github.com/mrjuliogomez), who runs these agents on his own advisory business. Questions, corrections and conversations are welcome through [issues](../../issues), and [CONTRIBUTING.md](CONTRIBUTING.md) explains what this repo accepts and why.
 
 ## Licence
 
