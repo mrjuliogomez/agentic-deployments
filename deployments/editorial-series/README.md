@@ -50,12 +50,12 @@ channel gate ──┬──> Wix    upload ──> post ──> log
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Orchestration | n8n Cloud | Same platform as the sibling pipelines, shared debugging craft |
-| Topic queue and logging | Google Sheets | Human-editable queue, zero setup |
-| Embeddings | OpenAI | Cheap dedup vectors per topic |
-| Research | Claude | Deep sourced briefs for essay-grade writing |
-| Writing | Claude | Holds a locked voice across three channel formats |
-| Image generation | Vertex AI Imagen | Abstract art on demand, text kept out of the prompt |
+| Orchestration | [n8n Cloud](https://n8n.io) | Same platform as the sibling pipelines, shared debugging craft |
+| Topic queue and logging | [Google Sheets](https://workspace.google.com) | Human-editable queue, zero setup |
+| Embeddings | [OpenAI](https://openai.com) | Cheap dedup vectors per topic |
+| Research | [Claude](https://claude.com) | Deep sourced briefs for essay-grade writing |
+| Writing | [Claude](https://claude.com) | Holds a locked voice across three channel formats |
+| Image generation | [Vertex AI](https://cloud.google.com/vertex-ai) Imagen | Abstract art on demand, text kept out of the prompt |
 | Text overlay | In-pipeline image edit | Image models garble text, deterministic overlay never does |
 | Publishing | Provider REST APIs via HTTP | Native integration nodes mask provider errors |
 
