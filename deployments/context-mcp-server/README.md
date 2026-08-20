@@ -42,10 +42,10 @@ GitHub Contents API (token in server env, never in any session)
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Protocol | MCP over streamable HTTP | Works from every agent surface with one connector |
-| Server | Node.js, Express, MCP SDK | Small enough to audit in one sitting |
-| Hosting | Railway | Auto-deploys from the repo it serves, no infrastructure to run |
-| Store | GitHub repos via Contents API | History, rollback and human readability for free |
+| Protocol | [MCP](https://modelcontextprotocol.io) over streamable HTTP | Works from every agent surface with one connector |
+| Server | [Node.js](https://nodejs.org), [Express](https://expressjs.com), MCP SDK | Small enough to audit in one sitting |
+| Hosting | [Railway](https://railway.com) | Auto-deploys from the repo it serves, no infrastructure to run |
+| Store | [GitHub](https://github.com) repos via Contents API | History, rollback and human readability for free |
 | Auth | Fine-grained token in server env | Scoped to named repos, never touches a session |
 
 ## Failure modes and handling
