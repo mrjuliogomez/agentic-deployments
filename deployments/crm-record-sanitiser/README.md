@@ -41,8 +41,8 @@ Run report
 
 | Layer | Tool | Why this one |
 |---|---|---|
-| Runtime | Cowork scheduled task | Research plus judgement per card needs an agent, not a fixed workflow |
-| CRM | Asana | The board being sanitised |
+| Runtime | [Claude](https://claude.com) Cowork scheduled task | Research plus judgement per card needs an agent, not a fixed workflow |
+| CRM | [Asana](https://asana.com) | The board being sanitised |
 | Registry research | Web search over public sources | VAT identifiers and addresses verbatim from source, never inferred |
 | Doctrine | Private context repo | The canonical block spec and evidence bar, versioned |
 
