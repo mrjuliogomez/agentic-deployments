@@ -6,6 +6,23 @@
 
 Defines the single card standard the whole agent fleet reads and writes. One card per lead. Identity lives in the card notes as fixed plain-text blocks, contact, company, sector, angle. Pipeline position lives in the board stage. History lives in append-only comments carrying both a human line and a machine-readable touch ledger. The standard is board-agnostic and load-bearing, the [follow-up agent](../../deployments/crm-discovery-followups/README.md), the [opportunity logger](../../deployments/crm-opportunity-logger/README.md) and the [record sanitiser](../../deployments/crm-record-sanitiser/README.md) all parse cards by this contract.
 
+## Anatomy of a card
+
+```
+one card per lead
+   |
+notes ──── identity, fixed plain-text blocks
+   |        contact (first line = deterministic recipient)
+   |        company, sector, angle
+stage ──── pipeline position, furthest phase wins
+   |
+comments ── append-only history
+   |         human line + machine-readable touch ledger
+   |
+send gate ── malformed recipient, missing identifier
+             or empty angle bars any automated send
+```
+
 ## How it runs
 
 The first contact line is the deterministic recipient, position carries the meaning and the outbound agent emails exactly that person, so recipient correctness is a hard gate. Won-stage economics travel on a single machine-parseable value line holding the net figure, its source references and its update date. Conversation state is never asserted from search previews, the full thread is read for every contact on the card before any claim about who said what last. Duplicates are defined narrowly, same company and same first contact, anything else with the same company is a parallel opportunity kept live and cross-linked. Stage moves follow furthest-phase-wins, and a card never sits in the automated cold-stage lane while a live human conversation is running, the automated agent would fire on top of it.
