@@ -4,7 +4,7 @@
 
 ## What it does
 
-A Model Context Protocol (MCP) server that gives every agent session shared, persistent memory over a private git-backed context portfolio, plus routed write access to this public repo. Four tools, list the portfolio, read a file, create or update a file, delete a file. Reads return the file's current blob hash alongside its content. Writes are guarded, a stale-baseline write is refused, a write that would shrink a file past a threshold is refused, and a force flag exists for deliberate overrides. Paths carrying a routed prefix target a second repository through the same guards.
+A Model Context Protocol (MCP) server that gives every agent session shared, persistent memory over a private git-backed context portfolio, plus routed write access to this public repo. Five tools, list the portfolio, read a file, create or update a file, patch a file by exact-match find and replace, delete a file. Reads return the file's current blob hash alongside its content, and an unbounded read of a large file is served as a bounded first slice with a pointer to the next offset, so no call can return an oversized result regardless of caller discipline. Writes are guarded, a stale-baseline write is refused, a write that would shrink a file past a threshold is refused, and a force flag exists for deliberate overrides. The patch tool carries the same baseline guard plus an occurrence-count check, so an edit is refused rather than applied blind when the matched text is not exactly where expected. Paths carrying a routed prefix target a second repository through the same guards.
 
 ## Why it exists
 
