@@ -40,7 +40,7 @@ Prep Media ── image valid? ──no──> log MEDIA_FAIL, drop
 
 **The loop** is a linear per-item pipeline. A splitting node feeds items through one at a time so every downstream reference resolves to the current item.
 
-**Context assembly** happens in two stages. A research stage builds a sourced brief for the article, then a write stage receives that brief plus a voice library. The model selects the voice from a menu gated by channel, so each channel only ever receives voices approved for it. Personas bias the choice but cannot force it, which keeps output varied without hard routing code.
+**Context assembly** happens in three stages. A research stage builds a sourced brief for the article, a verification stage checks whether the primary source was actually retrieved and tests every quote against four checks, a named human speaker, a stated role, independence from the publishing body itself, and recency, dropping any quote that fails, then a write stage receives the checked brief plus a voice library. The model selects the voice from a menu gated by channel, so each channel only ever receives voices approved for it. Personas bias the choice but cannot force it. Beneath voice selection, four structural elements, shape, rhythm, positioning and closing line, are drawn independently per item from a pool of well over a thousand combinations, which keeps output varied without hard routing code.
 
 **Tool bindings** are raw HTTP calls to each provider REST API, with the platform's native integration nodes retired from every branch. Recorded in decisions 0001, after three production failures on three different channels.
 
