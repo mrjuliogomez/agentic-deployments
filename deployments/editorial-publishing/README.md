@@ -74,6 +74,10 @@ Oversized audit cells. The logging backend enforces a hard character limit per c
 
 False success runs. Continue-on-error wiring lets a failing node report green while every item routes to a dead branch. Handled procedurally, a run is verified against the live channel surfaces and the audit log, never against run status alone.
 
+Posts reading identically despite voice rotation. Several beats, the opener, the closing line, the rhythm of the piece, were hard-specified in the write prompt, so output converged on one template regardless of which voice was selected. Handled by removing the fixed beats and drawing four structural elements independently per item instead, live-confirmed across three published posts with three distinct shapes on one run.
+
+Quotes attributed to the publishing body instead of a person. A live post once carried a quote attributed to the outlet that published it rather than a named speaker. Handled by the verification stage's four-part quote check, dropping any quote without a named human speaker, a stated role, independence from the publishing body, and recency.
+
 ## Decisions
 
 | # | Title |
