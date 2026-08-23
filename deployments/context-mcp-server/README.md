@@ -58,6 +58,8 @@ Deploy lag serving stale reads. The server's local checkout lags a fresh commit,
 
 Provider errors masked by wrappers. Handled by passing the raw GitHub error status and body through to the caller, the same doctrine the [editorial-publishing](../editorial-publishing/README.md) pipeline arrived at independently.
 
+Oversized files truncated or dumped to disk. A file past the client's result cap used to arrive cut off, or forced a full-content rewrite that risked losing text the caller never actually read. Handled by slicing any unbounded read past a size threshold server-side, and by the patch tool, which edits a large file through an exact-match find and replace without ever resending the whole content.
+
 ## Decisions
 
 | # | Title |
