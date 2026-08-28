@@ -8,3 +8,4 @@ A working library on applied AI. Anything that adds to how we build earns a fold
 |---|---|
 | [building-pat-the-ai-pocket-analyst-tool](building-pat-the-ai-pocket-analyst-tool/) | An AI pocket analyst built inside a major investment firm, transcript, slides and analysis |
 | [build-agents-that-run-for-hours-without-losing-the-plot](build-agents-that-run-for-hours-without-losing-the-plot/) | Source collection on long-running agent design, analysis in progress |
+| [wikiskill-persistent-skill-memory](wikiskill-persistent-skill-memory/) | Google paper on separating raw agent traces, a persistent wiki, and executable skills for skill evolution to compound — sources and analysis |
