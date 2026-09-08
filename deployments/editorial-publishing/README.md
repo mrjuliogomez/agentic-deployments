@@ -78,6 +78,8 @@ Posts reading identically despite voice rotation. Several beats, the opener, the
 
 Quotes attributed to the publishing body instead of a person. A live post once carried a quote attributed to the outlet that published it rather than a named speaker. Handled by the verification stage's four-part quote check, dropping any quote without a named human speaker, a stated role, independence from the publishing body, and recency.
 
+A cleanup stage silently authoring the defects it was meant to catch. A downstream text-repair step was found rewriting overlong output rather than only measuring it, and every rewrite it performed damaged a post while still reporting a clean pass, because it could only check what it could measure, not what it had just changed. Handled by a standing rule that the cleanup stage may measure, flag and refuse, and may never rewrite prose, with the actual overrun fixed upstream by giving the writer permission to leave detail out rather than trimming after the fact.
+
 ## Decisions
 
 | # | Title |
