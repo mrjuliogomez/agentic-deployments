@@ -59,7 +59,7 @@ Duplicate cards. The CRM's text search is unreliable and once caused a duplicate
 
 Invented data in the packet. A wrong registry identifier prices the wrong company. Handled by verbatim-from-source discipline, identifiers and contact data come from the thread, the registry or the minutes, never from inference.
 
-Wrong-language or off-register copy. The accompanying email is in the prospect's language with the provider referred to generically, the naming discipline lives in the copy rules fetched from the context repo.
+Wrong-language or off-register copy. Handled by writing the accompanying email in the prospect's language with the provider referred to generically, following the copy rules fetched from the context repo.
 
 Stale card state. The card may already sit in a later stage than the thread suggests. Handled by furthest-stage-wins, the agent enriches the existing card and never moves it backwards.
 
