@@ -33,6 +33,10 @@ Run report
 
 **The loop** is one nightly pass, per card, strictly non-destructive of meaning, the agent restructures and enriches but never invents. Identity data comes from public registries and the card's own history, and every researched fact lands with its source.
 
+**Context assembly** starts every run from the canon. The agent loads the canonical block spec and the evidence bar from the private context repo, then reads each card whole, its notes, its title and its comment history, before it changes anything, so a card that is already canonical is left untouched and costs no write.
+
+**Tool bindings** are the CRM for card reads, rewrites, comments and duplicate relocation, web search over public company registries for identifiers and addresses, and the private context repo for doctrine, which is read-only at run time.
+
 **Stop conditions.** The evidence bar is the hard gate, a card whose contact email cannot be verified from an allowed source is marked blocked and held for the human, and a duplicate is only relocated when confirmed, ambiguity stays put with a flag.
 
 **Human gates.** The agent never advances a card to the working pipeline, promotion is a human act. The blocked queue is worked by the human confirming emails from his own correspondence, one confirmation flips a card to ready.
