@@ -30,6 +30,8 @@ Top-ten summary delivered
 
 **Context assembly** is the merge itself, matching email-thread commitments to board tasks so the same obligation is not counted twice.
 
+**Tool bindings** are Gmail for the commitments window and the CRM for open tasks, both reached through the agent's standard tool surface with read access only.
+
 **Stop conditions.** The email window and the open-task set bound each run, and run cost is watched, an early token usage spike paused the agent until its read pattern over the email window was understood, and cost per run is now a monitored stop condition.
 
 **Human gates.** Read-only by design, the report informs the week, it changes nothing by itself.
