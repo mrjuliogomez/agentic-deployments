@@ -42,7 +42,7 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 
 **Context assembly.** The judge reads the compiled ruleset, a generated artefact with a version and a hash, never the scattered source rules, and matches substance against a capability model built from an interview-corrected inventory of what the principal can actually defend. Where live law is missing from the artefact the agent stops and reports, the run waits for compiled law. Recorded in decisions 0001 and 0002.
 
-**Tool bindings.** Portal and feed retrieval over raw HTTP, the record pool in Airtable, cards in Asana, judging by Claude agents running as scheduled tasks.
+**Tool bindings.** Portal and feed retrieval over raw HTTP, the record pool in [Airtable](https://airtable.com), cards in [Asana](https://asana.com), judging by [Claude](https://claude.com) agents running as scheduled tasks.
 
 **Stop conditions.** Headline kills write no record, only a tally. A resolution that fails twice on independent surfaces parks the record with the blocker named. A daily card cap and an auto-expiry window keep the queue honest. Negative results follow a surface-authority doctrine, a claim about a listing is only trusted from the surface that owns it.
 
