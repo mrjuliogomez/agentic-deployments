@@ -34,7 +34,7 @@ GitHub Contents API (token in server env, never in any session)
 
 **Tool bindings** are the GitHub REST API with the token held as a server environment variable. No credential ever crosses a chat surface, sessions authenticate to the server, the server authenticates to GitHub.
 
-**Stop conditions** are the write guards. A write carrying a stale baseline hash is refused with the current hash named. A write shrinking an existing file past the threshold is refused. Both refusals return instructions, re-read, merge, retry.
+**Stop conditions.** Every write passes the guards first. A write carrying a stale baseline hash is refused with the current hash named. A write shrinking an existing file past the threshold is refused. Both refusals return instructions, re-read, merge, retry.
 
 **Human gates.** The force flag is the only override and its use is deliberate by construction. Content routed to the public repository is published by agents only on explicit instruction.
 
