@@ -57,7 +57,7 @@ Portal APIs        Structured feeds       Web sweeps       Email channel
 | Ruleset | Compiled markdown artefact in git | Versioned, hashed, generated from source rules, never hand-edited |
 | Capability model | Versioned markdown in git | Interview-corrected ground truth the judge matches against |
 | Judgement | [Claude](https://claude.com) agents on scheduled tasks | Body-level reasoning that rules cannot express |
-| Cards | Asana | The surface where the human already works the pipeline |
+| Cards | [Asana](https://asana.com) | The surface where the human already works the pipeline |
 | Web sweeps | Chrome-driven browsing | Sources with no feed still get covered |
 
 ## Failure modes and handling
